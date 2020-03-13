@@ -1,3 +1,7 @@
+/*
+*    Author: Robert Jones
+*/
+
 class houseMarket 
 	{
 	idd=9901;

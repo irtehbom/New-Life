@@ -1,6 +1,5 @@
 /*
 *    Author: Robert Jones
-*
 */
 
 //Start the EventKeyHandler

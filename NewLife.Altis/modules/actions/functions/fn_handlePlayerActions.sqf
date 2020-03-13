@@ -1,7 +1,7 @@
 /*
 *    Author: Robert Jones
-*
 */
+
 private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey"];
 _ctrl = _this select 0;
 _code = _this select 1;
