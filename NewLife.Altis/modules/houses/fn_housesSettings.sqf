@@ -3,7 +3,6 @@
 	0 - House Price
 	1 - Containers
 */
-
 params ["_house"];
 
 if(_house == "") exitWith {[]};

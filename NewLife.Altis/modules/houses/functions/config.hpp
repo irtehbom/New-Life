@@ -8,8 +8,8 @@ class houses
 	class buyHouse {};
 };
 
-class houseConfig
+class housesSettings
 {
 	file = "modules\houses";
-	class settings {};
+	class housesSettings {};
 };
