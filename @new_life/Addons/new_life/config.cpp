@@ -1,3 +1,13 @@
+class CfgPatches {
+    class new_life {
+        units[] = {};
+        weapons[] = {};
+        requiredAddons[] = {};
+        fileName = "new_life.pbo";
+        author = "Rob";
+    };
+};
+
 //Functions
 class CfgFunctions {
 	class newLifeServer

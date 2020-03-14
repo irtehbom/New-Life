@@ -4,5 +4,6 @@
 
 class mysql
 {
-	file = "modules\mysql";
+	file = "\new_life\modules\mysql";
+	class asyncCall {};
 };
