@@ -5,11 +5,12 @@
 class houses
 {
 	file = "modules\houses\functions";
+	class houseMenu {};
 	class buyHouse {};
 };
 
-class housesSettings
+class houseSettings
 {
 	file = "modules\houses";
-	class housesSettings {};
+	class houseSettings {};
 };

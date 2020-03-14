@@ -1,1 +1,9 @@
+//These are just references to commands, this doesn't do anything
+
 missionConfigFile >> "houseMarket"
+
+createDialog "houseInteraction";
+
+_display = findDisplay 9902;
+_buyHouseButton = _display displayCtrl 1600;
+_buyHouseButton buttonSetAction "[] call life_fnc_stopEscorting; closeDialog 0;";

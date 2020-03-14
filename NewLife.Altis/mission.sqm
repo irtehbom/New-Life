@@ -8,23 +8,23 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=10;
+		nextID=14;
 	};
 	class Camera
 	{
-		pos[]={10759.069,32.41507,12286.072};
-		dir[]={-0.66698581,-0.63389206,0.39167976};
-		up[]={-0.54665178,0.77338338,0.32101506};
-		aside[]={0.50641292,-6.3941116e-007,0.86235684};
+		pos[]={10745.208,32.41507,12283.924};
+		dir[]={0.27911639,-0.66832763,0.68961507};
+		up[]={0.25076678,0.74381101,0.61956906};
+		aside[]={0.92702395,-6.2884646e-007,-0.37521186};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Characters_F",
 	"A3_Soft_F_Gamma_Truck_01",
 	"A3_Soft_F_Exp_Truck_01",
-	"A3_Soft_F_Quadbike_01"
+	"A3_Soft_F_Quadbike_01",
+	"A3_Characters_F"
 };
 class AddonsMetaData
 {
@@ -33,29 +33,29 @@ class AddonsMetaData
 		items=4;
 		class Item0
 		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item1
-		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item2
+		class Item1
 		{
 			className="A3_Soft_F_Exp";
 			name="Arma 3 Apex - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item3
+		class Item2
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -91,39 +91,10 @@ class Mission
 		items=3;
 		class Item0
 		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={10744.133,18.168671,12284.475};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						isPlayer=1;
-					};
-					id=3;
-					type="B_Soldier_A_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=2;
-		};
-		class Item1
-		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={10744.489,19.588261,12294.245};
+				position[]={10742.537,19.536196,12294.433};
 				angles[]={0.069222413,0,0.019996032};
 			};
 			side="Empty";
@@ -133,9 +104,8 @@ class Mission
 			};
 			id=8;
 			type="B_Truck_01_Repair_F";
-			atlOffset=1.335144e-005;
 		};
-		class Item2
+		class Item1
 		{
 			dataType="Object";
 			class PositionInfo
@@ -151,6 +121,77 @@ class Mission
 			id=9;
 			type="B_Quadbike_01_F";
 			atlOffset=-4.0054321e-005;
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10753.08,17.333574,12295.675};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=13;
+					type="B_Soldier_A_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=12;
 		};
 	};
 };

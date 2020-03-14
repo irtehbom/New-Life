@@ -1,5 +1,3 @@
-//Author: Robert Jones
-
 #include "defines.hpp"
 
 //Functions
@@ -7,6 +5,7 @@ class CfgFunctions {
 	class newLife
 	{
 		tag = "newLife";
+		#include "helpers\config.hpp"
 		#include "modules\houses\functions\config.hpp"
 		#include "modules\actions\functions\config.hpp"
 	};
