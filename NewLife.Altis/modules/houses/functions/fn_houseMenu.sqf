@@ -2,10 +2,9 @@
 *    Author: Robert Jones
 */
 
-//if(isNull _this select 0) exitWith {};
-//if(!(_this select 0 isKindOf "House_F")) exitWith {};
 _house = _this select 0;
 currentTarget = _house;
+currentTarget setVariable ["inUse", true, true];
 
 createDialog "houseInteraction";
 

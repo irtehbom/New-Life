@@ -6,8 +6,9 @@
 	3 - Virtual Inventory Space
 */
 
+private["_return", "_house"];
+
 _house = _this select 0;
-_return = [];
 
 switch (_house) do {
 	case "Land_i_House_Big_01_V1_F": {

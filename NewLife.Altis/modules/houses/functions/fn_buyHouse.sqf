@@ -3,8 +3,8 @@
 */
 
 _house = _this select 0;
+_storeHouseObject = _this select 0; //For some reason _house is changing to a string because of the below line of code, this is a hacky fix, someone please tell me why!!!!!!!
 _houseName = typeOf _house;
-
 _housePrice = [_houseName] call newLife_fnc_houseSettings;
 
 _action = [
@@ -22,3 +22,5 @@ _action = [
 	[_housePrice select 3] call newLife_fnc_numberText
 	], "Buy House?","Accept","Cancel"
 ] call BIS_fnc_guiMessage;
+
+_storeHouseObject setVariable ["inUse", false, true];
