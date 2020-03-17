@@ -12,7 +12,14 @@ if(count _housingDataResult != 0) then {
         _playerSteamID = _x select 1;
         _housePostion = _x select 3;
         _houseClassname = _x select 6;
-        if(typeName _housePostion == "STRING") then { _housePostion = parseSimpleArray(_housePostion); };
+
+         if(typeName _housePostion == "STRING") then {
+             _housePostion = parseSimpleArray _housePostion;
+         };
+
+        //diag_log format ["SERVER _housePostion typeName :: %1", typeName _housePostion];
+        //diag_log format ["SERVER _housePostion :: %1",  _housePostion];
+        //diag_log format ["SERVER _XXXXX :: %1",  _x];
 
         _house = nearestObject [_housePostion, _houseClassname];
         _house setVariable["owned",true, true];

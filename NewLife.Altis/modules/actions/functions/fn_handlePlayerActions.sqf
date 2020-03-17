@@ -26,15 +26,17 @@ if (_ctrlKey) then {
 
         _houseOwned = _target getVariable ["owned",false];
         _houseOwnedBy = _target getVariable ["owned_by",""];
+        _ownedByPlayer = false;
 
         //Check if the house is owned, if not pull up the menu
         if(!_houseOwned) then {
-            [_target] call newLife_fnc_houseMenu;
+            [_target,_ownedByPlayer] call newLife_fnc_houseMenu;
         };
 
         //Check if the house belongs to the player, pull up the menu if so
         if(_houseOwnedBy == _playerSteamId) then {
-            [_target] call newLife_fnc_houseMenu;
+            _ownedByPlayer = true;
+            [_target,_ownedByPlayer] call newLife_fnc_houseMenu;
         };
 
 	};

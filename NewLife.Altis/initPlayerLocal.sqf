@@ -14,10 +14,18 @@ if (!hasInterface && !isServer) exitWith {
 
 waitUntil {!isNil "server_ready"};
 
-//Hide Ui
-RscNoise_color = [1,1,1,0.5];
-4 cutText ["Setting up client", "BLACK", -1];
-5 cutRsc ["RscNoise", "PLAIN", 1];
+player enableSimulation false;
+
+"dynamicBlur" ppEffectEnable true;
+"dynamicBlur" ppEffectAdjust [6];
+"dynamicBlur" ppEffectCommit 0;
+"dynamicBlur" ppEffectAdjust [0.0];
+"dynamicBlur" ppEffectCommit 99999999;
+
+[parseText format
+["<t align='center' font='PuristaBold' size='2.5'>Welcome to New Life</t>" ],
+[0.85, 1.25, 1, 1], nil,  7, 0.7, 0] spawn BIS_fnc_textTiles;
+
 
 //Main display
 waitUntil {!(isNull (findDisplay 46))};
@@ -36,5 +44,11 @@ FIRST_SPAWN = true;
 
 //Wait until the client is complete
 waitUntil {player_session_complete};
-4 cutFadeOut 1;
-5 cutFadeOut 1;
+
+"dynamicBlur" ppEffectAdjust [6];
+"dynamicBlur" ppEffectCommit 0;
+"dynamicBlur" ppEffectAdjust [0.0];
+"dynamicBlur" ppEffectCommit 2;
+
+FIRST_SPAWN = false;
+player enableSimulation true;

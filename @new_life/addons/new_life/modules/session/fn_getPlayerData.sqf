@@ -26,5 +26,5 @@ _playerHousingResult = [_playerHousingQuery,2,true] call newLifeServer_fnc_async
 //Send the player information back to the client
 [_playerDataResult,_playerHousingResult] remoteExec ["newLife_fnc_playerDataReceived", _ownerID];
 
-diag_log format ["SERVER _playerDataResult Result :: %1", _playerDataResult];
-diag_log format ["SERVER _playerHousingResult Result :: %1", _playerHousingResult];
+//diag_log format ["SERVER _playerDataResult Result :: %1", _playerDataResult];
+//diag_log format ["SERVER _playerHousingResult Result :: %1", _playerHousingResult];

@@ -3,6 +3,7 @@
 missionConfigFile >> "houseMarket"
 missionConfigFile >> "houseMenu"
 missionConfigFile >> "yMenu"
+missionConfigFile >> "spawnMenu"
 
 createDialog "houseInteraction";
 

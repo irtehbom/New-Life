@@ -1,0 +1,58 @@
+.tooltip {
+    -fx-font:15 'sans-serif';
+}
+
+/*Makes the node have rounded edges*/
+.rounded-node{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+}
+/*Used for when input in a text field is bad*/
+.bad-input-text-field{
+    -fx-background-color: red;
+    -fx-text-fill:white;
+}
+.close-button{
+    -fx-background-color: red;
+    -fx-text-fill:white;
+    -fx-background-radius:0px;
+    -fx-font-size: 10px;
+}
+.hyper-link-fixed-color{
+    -fx-text-fill:-fx-text-background-color;
+}
+
+/**For disabled menu items to make the text darker and easier to read*/
+.menu-item:disabled .label, .menu-item:disabled .label:disabled {
+    -fx-opacity:1;
+}
+
+.deprecated-menu-item .label .text {
+    -fx-strikethrough: true;
+}
+
+.hover-tree-cell{
+    -fx-border-color:red;
+}
+
+.bordered-image{
+    -fx-border-color:#b3b3b3;
+    -fx-border-width:1px
+}
+
+.search-text-field{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-text-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1, 2;
+}
+.search-text-field-focused{
+    -fx-background-color: -fx-focus-color, -fx-text-box-border, -fx-control-inner-background;
+}
+
+.less-visible-tree-cell{
+    -fx-opacity:0.7;
+}
+
+.text-field:readonly, .text-area:readonly {
+    -fx-font-style:italic;
+}

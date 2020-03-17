@@ -11,11 +11,13 @@ class CfgFunctions {
 		#include "modules\houses\functions\config.hpp"
 		#include "modules\actions\functions\config.hpp"
 		#include "modules\session\functions\config.hpp"
+		#include "modules\spawnmenu\functions\config.hpp"
 	};
 };
 
 //Dialogs
 #include "modules\houses\dialogs\config.hpp"
 #include "modules\actions\dialogs\config.hpp"
+#include "modules\spawnmenu\dialogs\config.hpp"
 
 enableDebugConsole = 1;
