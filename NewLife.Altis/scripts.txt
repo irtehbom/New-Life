@@ -1,6 +1,8 @@
 //These are just references to commands, this doesn't do anything
 
 missionConfigFile >> "houseMarket"
+missionConfigFile >> "houseMenu"
+missionConfigFile >> "yMenu"
 
 createDialog "houseInteraction";
 

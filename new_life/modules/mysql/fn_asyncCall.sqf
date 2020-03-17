@@ -1,3 +1,13 @@
+/*
+    File: fn_mresArray.sqf
+    Author: Bryan "Tonic" Boardwine";
+
+    Description:
+    Acts as a mres (MySQL Real Escape) for arrays so they
+    can be properly inserted into the database without causing
+    any problems. The return method is 'hacky' but it's effective.
+*/
+
 #include "\new_life\script_macros.hpp"
 
 private ["_queryStmt","_mode","_multiarr","_queryResult","_key","_return","_loop"];

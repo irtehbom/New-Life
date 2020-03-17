@@ -1,4 +1,6 @@
 #include "defines.hpp"
+#include "RscTestControlTypes.hpp"
+#include "RscTestControlStyles.hpp"
 
 //Functions
 class CfgFunctions {
@@ -8,10 +10,12 @@ class CfgFunctions {
 		#include "helpers\config.hpp"
 		#include "modules\houses\functions\config.hpp"
 		#include "modules\actions\functions\config.hpp"
+		#include "modules\session\functions\config.hpp"
 	};
 };
 
 //Dialogs
 #include "modules\houses\dialogs\config.hpp"
+#include "modules\actions\dialogs\config.hpp"
 
 enableDebugConsole = 1;

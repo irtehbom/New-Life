@@ -15,5 +15,6 @@ class CfgFunctions {
 		tag = "newLifeServer";
 		#include "modules\houses\config.hpp"
 		#include "modules\mysql\config.hpp"
+		#include "modules\session\config.hpp"
 	};
 };

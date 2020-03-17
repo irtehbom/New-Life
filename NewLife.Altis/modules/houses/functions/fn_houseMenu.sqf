@@ -6,7 +6,10 @@ _house = _this select 0;
 currentTarget = _house;
 currentTarget setVariable ["inUse", true, true];
 
-createDialog "houseInteraction";
+
+if (!dialog) then {
+    createDialog "houseMenu";
+};
 
 _display = findDisplay 9902;
 _buyHouseButton = _display displayCtrl 1600;
