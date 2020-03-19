@@ -10,9 +10,3 @@ class houses
 	class unlockHouseDoor {};
 	class manageHouse {};
 };
-
-class houseSettings
-{
-	file = "modules\houses";
-	class houseSettings {};
-};
