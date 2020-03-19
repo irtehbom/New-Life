@@ -14,7 +14,7 @@ MONEY = _selectInnerPlayerDataResult select 1;
 BANK_MONEY = _selectInnerPlayerDataResult select 2;
 PLAYER_HOUSES = [];
 VIRTUAL_INVENTORY = [];
-PLAYER_MAXWEIGHT = 64;
+PLAYER_WEIGHT = 0;
 _playerHouses = PLAYER_HOUSES;
 
 //Setup housing for player

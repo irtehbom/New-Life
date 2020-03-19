@@ -141,7 +141,7 @@
 /// Styles
 ///////////////////////////////////////////////////////////////////////////
 
-class CT_LISTBOX
+class _CT_LISTBOX
 {
   access = 0; // Control access (0 - ReadAndWrite, 1 - ReadAndCreate, 2 - ReadOnly, 3 - ReadOnlyVerified)
   idc = CT_LISTBOX; // Control identification (without it, the control won't be displayed)
@@ -155,22 +155,22 @@ class CT_LISTBOX
   w = 10 * GUI_GRID_CENTER_W; // Width
   h = 3 * GUI_GRID_CENTER_H; // Height
 
-  colorBackground[] = {0.2,0.2,0.2,1}; // Fill color
-  colorSelectBackground[] = {1,0.5,0,1}; // Selected item fill color
-  colorSelectBackground2[] = {0,0,0,1}; // Selected item fill color (oscillates between this and colorSelectBackground)
+  colorBackground[] = {}; // Fill color
+  colorSelectBackground[] = {0,0,0,0.5}; // Selected item fill color
+  colorSelectBackground2[] = {0,0,0,0.5}; // Selected item fill color (oscillates between this and colorSelectBackground)
 
   sizeEx = GUI_GRID_CENTER_H; // Text size
   font = GUI_FONT_NORMAL; // Font from CfgFontFamilies
   shadow = 0; // Shadow (0 - none, 1 - directional, color affected by colorShadow, 2 - black outline)
   colorText[] = {1,1,1,1}; // Text and frame color
-  colorDisabled[] = {1,1,1,0.5}; // Disabled text color
+  colorDisabled[] = {}; // Disabled text color
   colorSelect[] = {1,1,1,1}; // Text selection color
   colorSelect2[] = {1,1,1,1}; // Text selection color (oscillates between this and colorSelect)
   colorShadow[] = {0,0,0,0.5}; // Text shadow color (used only when shadow is 1)
 
-  pictureColor[] = {1,0.5,0,1}; // Picture color
-  pictureColorSelect[] = {1,1,1,1}; // Selected picture color
-  pictureColorDisabled[] = {1,1,1,0.5}; // Disabled picture color
+  pictureColor[] = {0,0,0,0.5}; // Picture color
+  pictureColorSelect[] = {0,0,0,0.5};// Selected picture color
+  pictureColorDisabled[] = {0,0,0,0.5}; // Disabled picture color
 
   tooltip = "CT_LISTBOX"; // Tooltip text
   tooltipColorShade[] = {0,0,0,1}; // Tooltip background color
@@ -200,19 +200,6 @@ class CT_LISTBOX
 
     color[] = {1,1,1,1}; // Scrollbar color
   };
-};
-
-class Box
-{
-    type = CT_STATIC;
-    idc = -1;
-    style = ST_CENTER;
-    shadow = 2;
-    colorBackground[] = {};
-    colorText[] = {};
-    font = "PuristaLight";
-    sizeEx = 0.03;
-    text = "";
 };
 
 ///////////////////////////////////////////////////////////////////////////

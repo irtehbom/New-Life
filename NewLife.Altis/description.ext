@@ -23,6 +23,7 @@ class CfgFunctions {
 #include "modules\gathering\dialogs\config.hpp"
 
 //Configs
+#include "configs\master_config.hpp"
 #include "configs\virtual_items.hpp"
 #include "configs\spawn_points.hpp"
 #include "configs\housing.hpp"

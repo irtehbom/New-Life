@@ -66,13 +66,16 @@ class yMenu
        	w = 0.0464063 * safezoneW;
        	h = 0.022 * safezoneH;
        };
-       class inventoryListbox: RscListbox
+       class inventoryListbox: _CT_LISTBOX
        {
        	idc = 1500;
        	x = 0.530937 * safezoneW + safezoneX;
        	y = 0.335 * safezoneH + safezoneY;
        	w = 0.144375 * safezoneW;
        	h = 0.198 * safezoneH;
+       	 sizeEx = 0.03;
+       	colorBackground[] = {0,0,0,0.2};
+       	 colorSelectBackground[] =  {0,0,0,0.5};
        };
        class moneyStatusLabel: RscText
        {
