@@ -5,69 +5,45 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=37;
+		nextID=45;
 	};
 	class MarkerIDProvider
 	{
-		nextID=2;
+		nextID=5;
 	};
 	class Camera
 	{
-		pos[]={10695.036,90.779434,12231.889};
-		dir[]={0.44095516,-0.6428594,0.62644231};
-		up[]={0.3700743,0.76592654,0.5257439};
-		aside[]={0.81779188,-9.4249845e-007,-0.57565469};
+		pos[]={11888.11,956.69849,12752.692};
+		dir[]={-0.57061958,-0.74626136,-0.34278873};
+		up[]={-0.63975972,0.66558683,-0.38432303};
+		aside[]={-0.51496077,6.7148358e-007,0.85722506};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Soft_F_Gamma_Truck_01",
-	"A3_Soft_F_Exp_Truck_01",
-	"A3_Soft_F_Quadbike_01",
-	"A3_Characters_F",
-	"A3_Ui_F"
+	"A3_Ui_F",
+	"A3_Characters_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=5;
+		items=2;
 		class Item0
 		{
-			className="A3_Soft_F_Gamma";
-			name="Arma 3 - Unarmored Land Vehicles";
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
 		class Item1
 		{
-			className="A3_Soft_F_Exp";
-			name="Arma 3 Apex - Unarmored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item2
-		{
-			className="A3_Soft_F";
-			name="Arma 3 Alpha - Unarmored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item3
-		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item4
-		{
-			className="A3_Ui_F";
-			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -100,44 +76,123 @@ class Mission
 	};
 	class Entities
 	{
-		items=17;
+		items=18;
 		class Item0
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={10742.537,19.536196,12294.433};
-				angles[]={0.069222413,0,0.019996032};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=8;
-			type="B_Truck_01_Repair_F";
+			dataType="Marker";
+			position[]={3480.7153,6.0169806,13109.57};
+			name="spawn_1";
+			type="Empty";
+			id=15;
 		};
 		class Item1
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={10748.73,19.3958,12289.605};
-				angles[]={0.10890055,0,6.2778478};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=9;
-			type="B_Quadbike_01_F";
-			atlOffset=-4.0054321e-005;
+			dataType="Marker";
+			position[]={3631.8235,8.2843218,13269.494};
+			name="spawn_2";
+			type="Empty";
+			id=24;
 		};
 		class Item2
 		{
+			dataType="Marker";
+			position[]={3761.824,13.992072,13130.722};
+			name="spawn_3";
+			type="Empty";
+			id=25;
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={3666.3875,16.265909,12930.564};
+			name="spawn_4";
+			type="Empty";
+			id=26;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={25697.979,20.34598,21349.848};
+			name="spawn_5";
+			type="Empty";
+			id=27;
+		};
+		class Item5
+		{
+			dataType="Marker";
+			position[]={25624.641,20.810259,21368.496};
+			name="spawn_6";
+			type="Empty";
+			id=28;
+		};
+		class Item6
+		{
+			dataType="Marker";
+			position[]={25621.742,18.422817,21268.707};
+			name="spawn_7";
+			type="Empty";
+			id=29;
+		};
+		class Item7
+		{
+			dataType="Marker";
+			position[]={14004.226,26.145514,18721.018};
+			name="spawn_8";
+			type="Empty";
+			id=30;
+		};
+		class Item8
+		{
+			dataType="Marker";
+			position[]={14097.804,26.315722,18622.76};
+			name="spawn_9";
+			type="Empty";
+			id=31;
+		};
+		class Item9
+		{
+			dataType="Marker";
+			position[]={13934.763,23.23288,18717.777};
+			name="spawn_10";
+			type="Empty";
+			id=32;
+		};
+		class Item10
+		{
+			dataType="Marker";
+			position[]={13847.662,19.893526,18666.668};
+			name="spawn_11";
+			type="Empty";
+			id=33;
+		};
+		class Item11
+		{
+			dataType="Marker";
+			position[]={9297.4648,120.46373,15865.4};
+			name="spawn_12";
+			type="Empty";
+			id=34;
+		};
+		class Item12
+		{
+			dataType="Marker";
+			position[]={9449.5586,118.4676,15912.411};
+			name="spawn_13";
+			type="Empty";
+			id=35;
+		};
+		class Item13
+		{
+			dataType="Marker";
+			position[]={9415.584,109.27064,15998.73};
+			name="spawn_14";
+			type="Empty";
+			id=36;
+		};
+		class Item14
+		{
 			dataType="Group";
-			side="West";
+			side="East";
 			class Entities
 			{
 				items=1;
@@ -146,16 +201,16 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10753.08,17.333574,12295.675};
+						position[]={8468.7227,88.477325,25211.111};
 					};
-					side="West";
+					side="East";
 					flags=7;
 					class Attributes
 					{
-						isPlayer=1;
+						isPlayable=1;
 					};
-					id=13;
-					type="B_Soldier_A_F";
+					id=38;
+					type="O_Soldier_A_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -173,7 +228,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="Male08ENG";
+									value="Male01PER";
 								};
 							};
 						};
@@ -192,7 +247,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.95999998;
+									value=0.94999999;
 								};
 							};
 						};
@@ -203,119 +258,62 @@ class Mission
 			class Attributes
 			{
 			};
-			id=12;
-		};
-		class Item3
-		{
-			dataType="Marker";
-			position[]={3480.7153,6.0169806,13109.57};
-			name="spawn_1";
-			type="Empty";
-			id=15;
-		};
-		class Item4
-		{
-			dataType="Marker";
-			position[]={3631.8235,8.2843218,13269.494};
-			name="spawn_2";
-			type="Empty";
-			id=24;
-		};
-		class Item5
-		{
-			dataType="Marker";
-			position[]={3761.824,13.992072,13130.722};
-			name="spawn_3";
-			type="Empty";
-			id=25;
-		};
-		class Item6
-		{
-			dataType="Marker";
-			position[]={3666.3875,16.265909,12930.564};
-			name="spawn_4";
-			type="Empty";
-			id=26;
-		};
-		class Item7
-		{
-			dataType="Marker";
-			position[]={25697.979,20.34598,21349.848};
-			name="spawn_5";
-			type="Empty";
-			id=27;
-		};
-		class Item8
-		{
-			dataType="Marker";
-			position[]={25624.641,20.810259,21368.496};
-			name="spawn_6";
-			type="Empty";
-			id=28;
-		};
-		class Item9
-		{
-			dataType="Marker";
-			position[]={25621.742,18.422817,21268.707};
-			name="spawn_7";
-			type="Empty";
-			id=29;
-		};
-		class Item10
-		{
-			dataType="Marker";
-			position[]={14004.226,26.145514,18721.018};
-			name="spawn_8";
-			type="Empty";
-			id=30;
-		};
-		class Item11
-		{
-			dataType="Marker";
-			position[]={14097.804,26.315722,18622.76};
-			name="spawn_9";
-			type="Empty";
-			id=31;
-		};
-		class Item12
-		{
-			dataType="Marker";
-			position[]={13934.763,23.23288,18717.777};
-			name="spawn_10";
-			type="Empty";
-			id=32;
-		};
-		class Item13
-		{
-			dataType="Marker";
-			position[]={13847.662,19.893526,18666.668};
-			name="spawn_11";
-			type="Empty";
-			id=33;
-		};
-		class Item14
-		{
-			dataType="Marker";
-			position[]={9297.4648,120.46373,15865.4};
-			name="spawn_12";
-			type="Empty";
-			id=34;
+			id=37;
 		};
 		class Item15
 		{
-			dataType="Marker";
-			position[]={9449.5586,118.4676,15912.411};
-			name="spawn_13";
-			type="Empty";
-			id=35;
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10661.025,17.661222,12155.138};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=40;
+					type="O_Soldier_A_F";
+					atlOffset=3.8146973e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=39;
+			atlOffset=3.8146973e-005;
 		};
 		class Item16
 		{
 			dataType="Marker";
-			position[]={9415.584,109.27064,15998.73};
-			name="spawn_14";
-			type="Empty";
-			id=36;
+			position[]={10668.926,18.195999,12148.237};
+			name="gold_1";
+			markerType="ELLIPSE";
+			type="ellipse";
+			a=193.259;
+			b=203.774;
+			id=43;
+			atlOffset=0.00044250488;
+		};
+		class Item17
+		{
+			dataType="Marker";
+			position[]={10465.775,17.341999,12660.44};
+			name="gold_2";
+			markerType="ELLIPSE";
+			type="ellipse";
+			a=193.259;
+			b=203.774;
+			id=44;
+			atlOffset=3.6239624e-005;
 		};
 	};
 };

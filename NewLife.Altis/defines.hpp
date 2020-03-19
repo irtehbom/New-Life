@@ -820,13 +820,7 @@ class RscButton
 		1,
 		0.25
 	};
-	colorBackground[] =
-	{
-		0,
-		0,
-		0,
-		0.5
-	};
+	      	colorBackground[] ={255,0,0,0.7};
 	colorBackgroundDisabled[] =
 	{
 		0,

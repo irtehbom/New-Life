@@ -1,6 +1,4 @@
 #include "defines.hpp"
-#include "RscTestControlTypes.hpp"
-#include "RscTestControlStyles.hpp"
 
 //Functions
 class CfgFunctions {
@@ -11,13 +9,22 @@ class CfgFunctions {
 		#include "modules\houses\functions\config.hpp"
 		#include "modules\actions\functions\config.hpp"
 		#include "modules\session\functions\config.hpp"
-		#include "modules\spawnmenu\functions\config.hpp"
+		#include "modules\spawn_menu\functions\config.hpp"
+		#include "modules\virtual_inventory\functions\config.hpp"
+		#include "modules\gathering\functions\config.hpp"
 	};
 };
 
 //Dialogs
 #include "modules\houses\dialogs\config.hpp"
 #include "modules\actions\dialogs\config.hpp"
-#include "modules\spawnmenu\dialogs\config.hpp"
+#include "modules\spawn_menu\dialogs\config.hpp"
+#include "modules\virtual_inventory\dialogs\config.hpp"
+#include "modules\gathering\dialogs\config.hpp"
+
+//Configs
+#include "configs\virtual_items.hpp"
+#include "configs\spawn_points.hpp"
+#include "configs\housing.hpp"
 
 enableDebugConsole = 1;

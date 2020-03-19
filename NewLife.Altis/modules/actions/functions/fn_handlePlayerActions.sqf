@@ -17,9 +17,10 @@ if (_ctrlKey) then {
 
     if(_target isKindOF "House_F") then {
 
-		_isBuyable = [typeOf _target] call newLife_fnc_houseSettings;
-		
-		if(count _isBuyable == 0) exitWith { hint "This house is not purchasable"};
+        _targetString = typeOf _target;
+		_isBuyable = isClass (missionConfigFile >> "housingConfig" >> _targetString);
+
+		if(!_isBuyable) exitWith { hint "This house is not purchasable"};
 
         //Check that the house menu is not in use
         if(_target getVariable "inUse") exitWith { hint "This house is being purchased"};
@@ -60,6 +61,21 @@ if (_code == 22) then {
     }
 };
 
+//G key
+if (_code == 34) then {
+
+    _gatherMarkers = getArray (missionConfigFile >> "VirtualItemConfig" >> "gatherZones" >> "gatherZones");
+    _getGatherMarkerName = [_gatherMarkers, player] call BIS_fnc_nearestPosition;
+    _checkIfPlayerInMarker = [_getGatherMarkerName, player] call bis_fnc_intrigger;
+
+     if(_checkIfPlayerInMarker) then {
+         [_getGatherMarkerName] call newLife_fnc_gather;
+     };
+
+};
+
+//Escape handler
 if(_code == 1) then {
     _target setVariable ["inUse", false, true];
 };
+

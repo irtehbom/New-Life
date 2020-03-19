@@ -13,6 +13,9 @@ diag_log format ["CLIENT _housingDataResult Receive Result :: %1", _housingDataR
 MONEY = _selectInnerPlayerDataResult select 1;
 BANK_MONEY = _selectInnerPlayerDataResult select 2;
 PLAYER_HOUSES = [];
+VIRTUAL_INVENTORY = [];
+PLAYER_MAXWEIGHT = 64;
+_playerHouses = PLAYER_HOUSES;
 
 //Setup housing for player
 if(count _housingDataResult != 0) then {
@@ -35,7 +38,7 @@ if(count _housingDataResult != 0) then {
          _marker setMarkerTextLocal "House :: " + str _counter;
          _marker setMarkerColorLocal "ColorRed";
          _marker setMarkerTypeLocal "loc_Lighthouse";
-         PLAYER_HOUSES pushBack _housePostion;
+         _playerHouses pushBack _housePostion;
 
     } forEach _housingDataResult;
 };

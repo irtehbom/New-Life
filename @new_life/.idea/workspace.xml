@@ -15,20 +15,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Arma 3/mpmissions/NewLife.Altis/modules/spawnmenu" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Arma 3/mpmissions/NewLife.Altis/modules/houses" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Rob\Documents\Arma 3\mpmissions\NewLife.Altis\modules\spawnmenu" />
-      <recent name="C:\Users\Rob\Documents\Arma 3\mpmissions\NewLife.Altis\modules\spawnmenu\functions" />
-      <recent name="C:\Users\Rob\Documents\Arma 3\mpmissions\NewLife.Altis\modules\spawnmenu\dialogs" />
+      <recent name="C:\Users\Rob\Documents\Arma 3\mpmissions\NewLife.Altis\modules\houses" />
+      <recent name="C:\Users\Rob\Documents\Arma 3\mpmissions\NewLife.Altis\configs" />
       <recent name="C:\Users\Rob\Documents\Arma 3\mpmissions\NewLife.Altis" />
-      <recent name="C:\Users\Rob\Documents\Arma 3\mpmissions\NewLife.Altis\modules\session" />
+      <recent name="C:\Users\Rob\Documents\Arma 3\mpmissions\NewLife.Altis\modules\gathering" />
+      <recent name="C:\Users\Rob\Documents\Arma 3\mpmissions\NewLife.Altis\modules\actions\functions" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rob\Documents\Arma 3\mpmissions\NewLife.Altis\modules\gathering\functions" />
       <recent name="C:\Users\Rob\Documents\Arma 3\mpmissions\NewLife.Altis\modules\spawnmenu\functions" />
       <recent name="C:\Users\Rob\Documents\Arma 3\mpmissions\NewLife.Altis" />
       <recent name="C:\Steam\steamapps\common\Arma 3\@new_life\addons\new_life\modules\houses" />
@@ -84,10 +85,14 @@
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
     <state x="1052" y="214" key="NewModule_or_Project.wizard/0.0.1920.1019/-1680.-80.1680.1020@0.0.1920.1019" timestamp="1584265438046" />
-    <state x="258" y="123" width="1388" height="765" key="find.popup" timestamp="1584475173592">
+    <state x="92" y="92" width="1736" height="835" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1584625814744">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state x="258" y="123" width="1388" height="765" key="find.popup/0.0.1920.1019/-1680.-80.1680.1020@0.0.1920.1019" timestamp="1584475173592" />
+    <state x="92" y="92" width="1736" height="835" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1019/-1680.-80.1680.1020@0.0.1920.1019" timestamp="1584625814744" />
+    <state x="318" y="102" width="1388" height="765" key="find.popup" timestamp="1584624806279">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="318" y="102" width="1388" height="765" key="find.popup/0.0.1920.1019/-1680.-80.1680.1020@0.0.1920.1019" timestamp="1584624806279" />
     <state x="286" y="129" width="1171" height="790" key="find.popup/0.0.1920.1050/-1680.-80.1680.1020@0.0.1920.1050" timestamp="1584289557403" />
     <state x="548" y="135" key="new project wizard" timestamp="1584375750804">
       <screen x="0" y="0" width="1920" height="1019" />

@@ -4,9 +4,4 @@ missionConfigFile >> "houseMarket"
 missionConfigFile >> "houseMenu"
 missionConfigFile >> "yMenu"
 missionConfigFile >> "spawnMenu"
-
-createDialog "houseInteraction";
-
-_display = findDisplay 9902;
-_buyHouseButton = _display displayCtrl 1600;
-_buyHouseButton buttonSetAction "[] call life_fnc_stopEscorting; closeDialog 0;";
+missionConfigFile >> "manageHouse"

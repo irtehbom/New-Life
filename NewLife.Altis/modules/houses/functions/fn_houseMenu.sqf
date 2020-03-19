@@ -14,11 +14,13 @@ if (!dialog) then {
 if(_ownedByPlayer) then {
     _display = findDisplay 9902;
     _manageHouse = _display displayCtrl 1600;
+    disableSerialization;
     _manageHouse ctrlSetText "Manage House";
     _manageHouse buttonSetAction "[currentTarget] spawn newLife_fnc_manageHouse; closeDialog 0";
 } else {
     _display = findDisplay 9902;
     _buyHouse = _display displayCtrl 1600;
+    disableSerialization;
     _buyHouse ctrlSetText "Buy House";
     _buyHouse buttonSetAction "[currentTarget] spawn newLife_fnc_buyHouse; closeDialog 0";
 };
