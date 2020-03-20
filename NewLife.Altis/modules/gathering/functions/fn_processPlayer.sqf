@@ -28,6 +28,7 @@ _virtual_inventory = VIRTUAL_INVENTORY;
 _sleep_amount = 0.1;
 _progress = 0.01;
 cancelled_process = false;
+_itemFound = false;
 
 _itemAmount = 0;
 _itemDisplayName = "";
@@ -42,6 +43,8 @@ _itemDisplayName = "";
     };
 
 } forEach _virtual_inventory;
+
+if(!_itemFound) exitWith { hint format["You don't have any %1 to process", _displayName]; };
 
 _action = [
     format["Process <t color='#8cff9b'>%1</t> <t color='#ffffff'>%2</t>",
@@ -78,7 +81,8 @@ if(_action) then {
 
     while{true} do
     {
-        sleep _sleep_amount;
+        //sleep _sleep_amount;
+        sleep 0;
         _progress = _progress + 0.01;
         _progressBar progressSetPosition _progress;
         _progressText ctrlSetText format["Processing %3 (%1%2)...",round(_progress * 100),"%",_itemDisplayName];
@@ -103,7 +107,6 @@ if(_action) then {
 
             if(_checkItemVariableName == _itemType) then {
 
-                _itemFound = true; //Check if the item is in the virtual inventory class
                 _oldItemVariableName = _x;
                 _itemData =  _x select 1; //Selects the inner class array
                 _itemDisplayName = _itemData select 0;
@@ -113,6 +116,10 @@ if(_action) then {
                 _itemData set[0, _processedDisplayName];
                 _itemData set[2, _processedItemWeight];
                 _itemData set[3, _processedIcon];
+
+                _itemIndividualWeight = _itemAmount * _processedItemWeight; //Works out how much each item weighs
+                PLAYER_WEIGHT = _itemIndividualWeight; //Sets the new weight
+
             };
 
         } forEach _virtual_inventory;
