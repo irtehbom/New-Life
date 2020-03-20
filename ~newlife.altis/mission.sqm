@@ -8,7 +8,7 @@ class EditorData
 	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=46;
+		nextID=48;
 	};
 	class MarkerIDProvider
 	{
@@ -76,7 +76,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=19;
+		items=20;
 		class Item0
 		{
 			dataType="Marker";
@@ -296,7 +296,7 @@ class Mission
 			dataType="Marker";
 			position[]={10668.926,18.195999,12148.237};
 			name="gold_1";
-			text="vitem_gold";
+			text="vitem_gold_unprocessed";
 			markerType="ELLIPSE";
 			type="ellipse";
 			a=193.259;
@@ -309,7 +309,7 @@ class Mission
 			dataType="Marker";
 			position[]={10465.775,17.341999,12660.44};
 			name="gold_2";
-			text="vitem_gold";
+			text="vitem_gold_unprocessed";
 			markerType="ELLIPSE";
 			type="ellipse";
 			a=193.259;
@@ -322,13 +322,84 @@ class Mission
 			dataType="Marker";
 			position[]={11385.27,27.691,12501.066};
 			name="silver_1";
-			text="vitem_silver";
+			text="vitem_silver_unprocessed";
 			markerType="ELLIPSE";
 			type="ellipse";
 			a=193.259;
 			b=203.774;
 			id=45;
 			atlOffset=-7.6293945e-005;
+		};
+		class Item19
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={10657.286,16.440792,12197.488};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						init="this addAction[""<t color='#FF0000'>[ </t><t color='#FFFFFF'>Process Vehicle Contents</t><t color='#FF0000'> ]</t>"",newLife_fnc_processVehicle,""vitem_gold_unprocessed""];this addAction[""<t color='#FFF000'>[ </t><t color='#FFFFFF'>Process Inventory Contents</t><t color='#FFF000'> ]</t>"",newLife_fnc_processPlayer,""vitem_gold_unprocessed""];";
+					};
+					id=47;
+					type="O_Soldier_A_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=46;
 		};
 	};
 };

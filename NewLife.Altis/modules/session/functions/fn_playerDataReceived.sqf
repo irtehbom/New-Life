@@ -5,16 +5,22 @@
 _playerDataResult = _this select 0;
 _selectInnerPlayerDataResult = _playerDataResult select 0;
 
-diag_log format ["CLIENT _playerDataResult Receive Result :: %1", _selectInnerPlayerDataResult];
+//Get master config
+_masterConfig = (missionConfigFile >> "masterConfig" >> 'player');
+_maxPlayerWeight = getNumber (_masterConfig >> "maxInventoryWeight");
+
+//diag_log format ["CLIENT _playerDataResult Receive Result :: %1", _selectInnerPlayerDataResult];
 
 _housingDataResult = _this select 1;
-diag_log format ["CLIENT _housingDataResult Receive Result :: %1", _housingDataResult];
+//diag_log format ["CLIENT _housingDataResult Receive Result :: %1", _housingDataResult];
 
 MONEY = _selectInnerPlayerDataResult select 1;
 BANK_MONEY = _selectInnerPlayerDataResult select 2;
 PLAYER_HOUSES = [];
 VIRTUAL_INVENTORY = [];
 PLAYER_WEIGHT = 0;
+MAX_PLAYER_WEIGHT = _maxPlayerWeight;
+
 _playerHouses = PLAYER_HOUSES;
 
 //Setup housing for player
@@ -43,4 +49,5 @@ if(count _housingDataResult != 0) then {
     } forEach _housingDataResult;
 };
 
+[player] remoteExec ["newLife_fnc_setUpCiv", player];
 [player] remoteExec ["newLife_fnc_spawnMenu",owner player];

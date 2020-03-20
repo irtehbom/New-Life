@@ -69,7 +69,7 @@ if (_code == 34) then {
     _checkIfPlayerInMarker = [_getGatherMarkerName, player] call bis_fnc_intrigger;
 
      if(_checkIfPlayerInMarker) then {
-         [_getGatherMarkerName] call newLife_fnc_gather;
+         [_getGatherMarkerName] spawn newLife_fnc_gather;
      };
 
 };

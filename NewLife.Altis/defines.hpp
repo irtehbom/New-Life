@@ -2058,4 +2058,5 @@ class CT_MAP
         lineWidthThin = 0.008;
         textureComboBoxColor = "#(argb,8,8,3)color(1,1,1,1)";
     };
+
 };

@@ -52,3 +52,4 @@ waitUntil {player_session_complete};
 
 FIRST_SPAWN = false;
 player enableSimulation true;
+ACTION_INUSE = false;

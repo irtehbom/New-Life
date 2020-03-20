@@ -6,4 +6,5 @@ class session
 {
 	file = "modules\session\functions";
 	class playerDataReceived {};
+	class setUpCiv {};
 };

@@ -5,22 +5,24 @@ class CfgFunctions {
 	class newLife
 	{
 		tag = "newLife";
+		#include "modules\ui_dialogs\functions\config.hpp"
+		#include "modules\generic_dialogs\functions\config.hpp"
 		#include "helpers\config.hpp"
 		#include "modules\houses\functions\config.hpp"
 		#include "modules\actions\functions\config.hpp"
 		#include "modules\session\functions\config.hpp"
-		#include "modules\spawn_menu\functions\config.hpp"
 		#include "modules\virtual_inventory\functions\config.hpp"
 		#include "modules\gathering\functions\config.hpp"
 	};
 };
 
 //Dialogs
+#include "modules\ui_dialogs\dialogs\config.hpp"
+#include "modules\generic_dialogs\dialogs\config.hpp"
 #include "modules\houses\dialogs\config.hpp"
-#include "modules\actions\dialogs\config.hpp"
-#include "modules\spawn_menu\dialogs\config.hpp"
 #include "modules\virtual_inventory\dialogs\config.hpp"
 #include "modules\gathering\dialogs\config.hpp"
+#include "modules\actions\dialogs\config.hpp"
 
 //Configs
 #include "configs\master_config.hpp"

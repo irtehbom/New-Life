@@ -114,7 +114,7 @@ class yMenu
        	y = 0.544 * safezoneH + safezoneY;
        	w = 0.0567187 * safezoneW;
        	h = 0.022 * safezoneH;
-             	colorBackground[] ={255,0,0,0.7};
+        colorBackground[] ={255,0,0,0.7};
        };
        class useYitem: RscButton
        {
@@ -125,7 +125,7 @@ class yMenu
        	y = 0.544 * safezoneH + safezoneY;
        	w = 0.0567187 * safezoneW;
        	h = 0.022 * safezoneH;
-             	colorBackground[] ={255,0,0,0.7};
+        colorBackground[] ={255,0,0,0.7};
        };
        class housesOwnedLabel: RscText
        {
