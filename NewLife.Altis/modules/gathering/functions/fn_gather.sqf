@@ -2,7 +2,7 @@
 *    Author: Robert Jones
 */
 
-if(ACTION_INUSE) exitWith {};
+if (ACTION_INUSE) exitWith {};
 
 _markerName = _this select 0;
 _itemType = markerText _markerName;

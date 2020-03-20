@@ -2,6 +2,8 @@
 *    Author: Robert Jones
 */
 
+if (ACTION_INUSE) exitWith {};
+
 _target = _this select 0;
 _caller = _this select 1;
 _actionID = _this select 2;
@@ -54,6 +56,8 @@ _action = [
 
 if(_action) then {
 
+    ACTION_INUSE = true;
+
     if (_itemAmount <= 10)
         then { _sleep_amount =  0.3; }; //0:30
     if (_itemAmount > 10)
@@ -81,8 +85,8 @@ if(_action) then {
 
     while{true} do
     {
-        //sleep _sleep_amount;
-        sleep 0;
+        sleep _sleep_amount;
+        //sleep 0;
         _progress = _progress + 0.01;
         _progressBar progressSetPosition _progress;
         _progressText ctrlSetText format["Processing %3 (%1%2)...",round(_progress * 100),"%",_itemDisplayName];
@@ -92,12 +96,14 @@ if(_action) then {
             [parseText format
             ["<t align='center' font='PuristaBold' size='1.5'>You processed %1 %2</t>", _itemAmount, _displayName],
             [0.9, 1.30, 1, 1], nil,  2, 0.7, 0] spawn BIS_fnc_textTiles;
+            ACTION_INUSE = false;
         };
 
         if(player distance _target > 10) exitWith {
             hint "You need to stay within 10 meters of the trader";
             5 cutText ["","PLAIN"];
             cancelled_process = true;
+            ACTION_INUSE = false;
         };
     };
 
@@ -123,6 +129,9 @@ if(_action) then {
             };
 
         } forEach _virtual_inventory;
+
+        ACTION_INUSE = false;
+
     };
 
 };
