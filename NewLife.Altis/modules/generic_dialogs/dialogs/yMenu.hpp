@@ -1,3 +1,4 @@
+#include "CustomControlClasses.hpp"
 class yMenu
 {
 	idd = 9903;
@@ -164,8 +165,11 @@ class yMenu
 			style = 16;
 			colorBackground[] = {0.302,0.302,0.302,0.6};
 			colorDisabled[] = {0.2,0.2,0.2,1};
-			colorSelect[] = {0.702,0.102,0.102,1};
+			colorSelect[] = {0.2,0.2,0.2,1};
 			colorText[] = {0.902,0.902,0.902,1};
+			colorPicture[] = {1,1,1,1};
+			colorPictureSelected[] = {1,1,1,1};
+			colorPictureDisabled[] = {1,1,1,1};
 			font = "PuristaLight";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
