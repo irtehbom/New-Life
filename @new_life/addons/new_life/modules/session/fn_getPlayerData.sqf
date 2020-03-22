@@ -20,7 +20,7 @@ if (_playerDataResult isEqualType "" || count _playerDataResult isEqualTo 0) exi
 };
 
 //Get housing data
-_playerHousingQuery = format ["SELECT steam_id, name, house_position, y_inventory, containers, classname FROM houses WHERE steam_id = '%1'", _playerSteamID];
+_playerHousingQuery = format ["SELECT steam_id, name, house_position, virtual_inventory, containers, classname, custom_price FROM houses WHERE steam_id = '%1'", _playerSteamID];
 _playerHousingResult = [_playerHousingQuery,2,true] call newLifeServer_fnc_asyncCall;
 
 //Send the player information back to the client

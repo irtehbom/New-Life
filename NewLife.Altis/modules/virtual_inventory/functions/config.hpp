@@ -5,4 +5,7 @@
 class virtualInventory
 {
 	file = "modules\virtual_inventory\functions";
+	class manageVirtualInventory {};
+	class getVirtualInventory {};
+	class setVirtualInventory {};
 };

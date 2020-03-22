@@ -54,7 +54,6 @@ if(_action) then {
     _house setVariable["owned",true, true];
     _house setVariable["house_locked",true,true];
     _house setVariable["owned_by",_playerSteamID, true];
-    _house setVariable["virtual_inventory",[], true];
 
     //Create the marker
     _marker = createMarkerLocal [format["house_%1",(_house getVariable "owned_by")],_housePos];

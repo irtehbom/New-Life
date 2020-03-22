@@ -5,6 +5,7 @@
 //Get player Data
 _housingDataQuery = format ["SELECT * from houses"];
 _housingDataResult = [_housingDataQuery,2,true] call newLifeServer_fnc_asyncCall;
+//diag_log format ["SERVER _housingDataResult :: %1", _housingDataResult];
 
 if(count _housingDataResult != 0) then {
     //Set up houses
@@ -25,6 +26,7 @@ if(count _housingDataResult != 0) then {
         _house setVariable["owned",true, true];
         _house setVariable["house_locked",true,true];
         _house setVariable["owned_by",_playerSteamID, true];
+        _house setVariable["virtual_inventory",[], true];
 
         _numOfDoors = getNumber(configFile >> "CfgVehicles" >> (typeOf _house) >> "numberOfDoors");
         for "_i" from 1 to _numOfDoors do {
