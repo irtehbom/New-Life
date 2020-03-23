@@ -2,7 +2,6 @@ class manageVirtualInventory
 {
 	idd = 9905;
 	
-	};
 	class Controls
 	{
 		class Background
