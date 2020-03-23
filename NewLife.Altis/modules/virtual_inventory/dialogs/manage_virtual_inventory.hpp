@@ -122,6 +122,7 @@ class manageVirtualInventory
             y = 0.632 * safezoneH + safezoneY;
             w = 0.0567187 * safezoneW;
             h = 0.022 * safezoneH;
+            action = "[1] spawn newLife_fnc_setVirtualInventory";
         };
         class takeItemsButton: RscButton
         {
@@ -131,6 +132,7 @@ class manageVirtualInventory
             y = 0.632 * safezoneH + safezoneY;
             w = 0.0567187 * safezoneW;
             h = 0.022 * safezoneH;
+            action = "[2] spawn newLife_fnc_setVirtualInventory";
         };
     };
 };

@@ -1,16 +1,27 @@
 /*
 *    Author: Robert Jones
+     Mode 1: Takes from player Inventory and stores it in object
+     Mode 2: Takes from object inventory and stores it in player
 */
+_mode = _this select 0;
 
-_listBoxControl = _this select 0;
-_virtual_inventory = _this select 1;
+disableSerialization;
+_display = findDisplay 9905;
 
-{
-    _itemData =  _x select 1;
-    _currentItemName = _itemData select 0;
-    _currentItemAmount = _itemData select 1;
-    _currentItemIcon = _itemData select 3;
-    _listBoxControl lbAdd format ["%1 | Amount: %2", _currentItemName,_currentItemAmount];
-    _listBoxControl lbSetPicture [_foreachindex, _currentItemIcon];
+_playerListBoxControl = _display displayCtrl 1500;
+_playerInputBoxControl = _display displayCtrl 1400;
 
-} forEach _virtual_inventory;
+_playerInventroy = VIRTUAL_INVENTORY;
+
+_objectListBoxControl = _display displayCtrl 1501;
+_objectInputBoxControl = _display displayCtrl 1401;
+
+_objectInventory = currentTarget getVariable["virtual_inventory",[]];
+
+if(_mode == 1) then {
+    [_playerListBoxControl, _objectListBoxControl, _playerInventroy, _objectInventory] call newLife_fnc_transferVirtualInventory;
+};
+
+if(_mode == 2) then {
+    [_objectListBoxControl, _playerListBoxControl, _objectInventory, _playerInventroy] call newLife_fnc_transferVirtualInventory;
+};

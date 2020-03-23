@@ -8,4 +8,5 @@ class virtualInventory
 	class manageVirtualInventory {};
 	class getVirtualInventory {};
 	class setVirtualInventory {};
+	class transferVirtualInventory {};
 };
