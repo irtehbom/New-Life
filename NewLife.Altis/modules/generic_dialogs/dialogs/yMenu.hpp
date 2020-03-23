@@ -2,13 +2,9 @@ class yMenu
 {
 	idd = 9903;
 	
-	class ControlsBackground
-	{
-		
-	};
 	class Controls
 	{
-		class yMenuBackground
+		class FinanceBackground
 		{
 			type = 0;
 			idc = -1;
@@ -24,7 +20,7 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuBackground2
+		class InventoryBackground
 		{
 			type = 0;
 			idc = -1;
@@ -40,7 +36,7 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuBackground3
+		class ServicesBackground
 		{
 			type = 0;
 			idc = -1;
@@ -56,7 +52,7 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuTitleBoxShadow
+		class TitleBoxShadow
 		{
 			type = 0;
 			idc = -1;
@@ -72,7 +68,7 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuTitleBox
+		class TitleBox
 		{
 			type = 0;
 			idc = -1;
@@ -88,7 +84,7 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
 			
 		};
-		class yMenuInventoryTitleBoxShadow
+		class InventoryTitleShadow
 		{
 			type = 0;
 			idc = -1;
@@ -104,7 +100,7 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuInventoryTitleBox
+		class InventoryTitle
 		{
 			type = 0;
 			idc = -1;
@@ -121,7 +117,7 @@ class yMenu
 			shadow = 0;
 			
 		};
-		class yMenuFinanceTitleBoxShadow
+		class FinancesTitleShadow
 		{
 			type = 0;
 			idc = -1;
@@ -137,7 +133,7 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuFinanceTitleBox
+		class FinancesTitle
 		{
 			type = 0;
 			idc = -1;
@@ -153,7 +149,56 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuInventoryList
+		class ServicesTitleShadow
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.35989584;
+			y = safeZoneY + safeZoneH * 0.48888889;
+			w = safeZoneW * 0.1484375;
+			h = safeZoneH * 0.02222223;
+			style = 0;
+			text = "";
+			colorBackground[] = {0.5059,0,0,1};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			
+		};
+		class ServicesTitle
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.35989584;
+			y = safeZoneY + safeZoneH * 0.48333334;
+			w = safeZoneW * 0.1484375;
+			h = safeZoneH * 0.02222223;
+			style = 0+2;
+			text = "Services";
+			colorBackground[] = {0.702,0.102,0.102,1};
+			colorText[] = {0.902,0.902,0.902,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			
+		};
+		class InventoryWeight
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.590625;
+			y = safeZoneY + safeZoneH * 0.34074075;
+			w = safeZoneW * 0.0453125;
+			h = safeZoneH * 0.02222223;
+			style = 1;
+			text = "0/0";
+			colorBackground[] = {0.702,0.102,0.102,0};
+			colorText[] = {0.902,0.902,0.902,1};
+			font = "PuristaLight";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8);
+			shadow = 0;
+			
+		};
+		class InventoryList
 		{
 			type = 5;
 			idc = 1500;
@@ -185,7 +230,7 @@ class yMenu
 			};
 			
 		};
-		class yMenuDiscardShadow
+		class DiscardButtonShadow
 		{
 			type = 0;
 			idc = -1;
@@ -201,23 +246,7 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuUseShadow
-		{
-			type = 0;
-			idc = -1;
-			x = safeZoneX + safeZoneW * 0.52083334;
-			y = safeZoneY + safeZoneH * 0.63796297;
-			w = safeZoneW * 0.0578125;
-			h = safeZoneH * 0.02222223;
-			style = 0;
-			text = "";
-			colorBackground[] = {0.2078,0.2078,0.2078,1};
-			colorText[] = {1,1,1,1};
-			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			
-		};
-		class yMenuDiscard
+		class DiscardButton
 		{
 			type = 1;
 			idc = -1;
@@ -249,7 +278,23 @@ class yMenu
 			tooltip = "Discard the selected item.";
 			
 		};
-		class yMenuUse
+		class UseButtonShadow
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.52083334;
+			y = safeZoneY + safeZoneH * 0.63796297;
+			w = safeZoneW * 0.0578125;
+			h = safeZoneH * 0.02222223;
+			style = 0;
+			text = "";
+			colorBackground[] = {0.2078,0.2078,0.2078,1};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			
+		};
+		class UseButton
 		{
 			type = 1;
 			idc = -1;
@@ -281,7 +326,7 @@ class yMenu
 			tooltip = "Use the selected item.";
 			
 		};
-		class yMenuCashImage
+		class CashIcon
 		{
 			type = 0;
 			idc = -1;
@@ -297,7 +342,7 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
 			
 		};
-		class yMenuBankImage
+		class BankIcon
 		{
 			type = 0;
 			idc = -1;
@@ -313,7 +358,7 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
 			
 		};
-		class yMenuLine
+		class FinancesLine
 		{
 			type = 0;
 			idc = -1;
@@ -329,7 +374,7 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuBankAmount
+		class BankAmount
 		{
 			type = 0;
 			idc = 1001;
@@ -345,7 +390,7 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8);
 			
 		};
-		class yMenuCashAmount
+		class CashAmount
 		{
 			type = 0;
 			idc = 1000;
@@ -361,39 +406,7 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8);
 			
 		};
-		class yMenuServicesTitleBoxShadow
-		{
-			type = 0;
-			idc = -1;
-			x = safeZoneX + safeZoneW * 0.35989584;
-			y = safeZoneY + safeZoneH * 0.48888889;
-			w = safeZoneW * 0.1484375;
-			h = safeZoneH * 0.02222223;
-			style = 0;
-			text = "";
-			colorBackground[] = {0.5059,0,0,1};
-			colorText[] = {1,1,1,1};
-			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			
-		};
-		class yMenuServicesTitleBox
-		{
-			type = 0;
-			idc = -1;
-			x = safeZoneX + safeZoneW * 0.35989584;
-			y = safeZoneY + safeZoneH * 0.48333334;
-			w = safeZoneW * 0.1484375;
-			h = safeZoneH * 0.02222223;
-			style = 0+2;
-			text = "Services";
-			colorBackground[] = {0.702,0.102,0.102,1};
-			colorText[] = {0.902,0.902,0.902,1};
-			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			
-		};
-		class yMenuKeysImage
+		class KeychainIcon
 		{
 			type = 0;
 			idc = -1;
@@ -410,24 +423,7 @@ class yMenu
 			tooltip = "View your keychain.";
 			
 		};
-		class yMenuInboxImage
-		{
-			type = 0;
-			idc = -1;
-			x = safeZoneX + safeZoneW * 0.47135417;
-			y = safeZoneY + safeZoneH * 0.56018519;
-			w = safeZoneW * 0.025;
-			h = safeZoneH * 0.04444445;
-			style = 0+2+48;
-			text = "icons\messages.paa";
-			colorBackground[] = {0.702,0.102,0.102,0};
-			colorText[] = {0.902,0.902,0.902,1};
-			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
-			tooltip = "View your inbox.";
-			
-		};
-		class yMenuGangImage
+		class GangIcon
 		{
 			type = 0;
 			idc = -1;
@@ -444,7 +440,24 @@ class yMenu
 			tooltip = "View the gang menu.";
 			
 		};
-		class yMenuLine1
+		class InboxIcon
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.47135417;
+			y = safeZoneY + safeZoneH * 0.56018519;
+			w = safeZoneW * 0.025;
+			h = safeZoneH * 0.04444445;
+			style = 0+2+48;
+			text = "icons\messages.paa";
+			colorBackground[] = {0.702,0.102,0.102,0};
+			colorText[] = {0.902,0.902,0.902,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
+			tooltip = "View your inbox.";
+			
+		};
+		class ServicesLine1
 		{
 			type = 0;
 			idc = -1;
@@ -460,7 +473,7 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuLine2
+		class ServicesLine2
 		{
 			type = 0;
 			idc = -1;
@@ -474,23 +487,6 @@ class yMenu
 			colorText[] = {0.902,0.902,0.902,1};
 			font = "PuristaMedium";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			
-		};
-		class yMenuInventoryTitleBox_copy1
-		{
-			type = 0;
-			idc = -1;
-			x = safeZoneX + safeZoneW * 0.590625;
-			y = safeZoneY + safeZoneH * 0.34074075;
-			w = safeZoneW * 0.0453125;
-			h = safeZoneH * 0.02222223;
-			style = 1;
-			text = "0/0";
-			colorBackground[] = {0.702,0.102,0.102,0};
-			colorText[] = {0.902,0.902,0.902,1};
-			font = "PuristaLight";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8);
-			shadow = 0;
 			
 		};
 		
