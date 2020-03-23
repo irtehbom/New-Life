@@ -2,20 +2,16 @@ class yMenu
 {
 	idd = 9903;
 	
-	class ControlsBackground
-	{
-		
-	};
 	class Controls
 	{
-		class yMenuBackground
+		class FinanceBackground
 		{
 			type = 0;
 			idc = -1;
-			x = 0.15000002;
-			y = 0.20000003;
-			w = 0.38000004;
-			h = 0.25000002;
+			x = safeZoneX + safeZoneW * 0.35572917;
+			y = safeZoneY + safeZoneH * 0.33518519;
+			w = safeZoneW * 0.15677084;
+			h = safeZoneH * 0.13796297;
 			style = 0;
 			text = "";
 			colorBackground[] = {0.102,0.102,0.102,0.8};
@@ -24,14 +20,14 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuBackground2
+		class InventoryBackground
 		{
 			type = 0;
 			idc = -1;
-			x = 0.54000017;
-			y = 0.2000001;
-			w = 0.31000005;
-			h = 0.60000001;
+			x = safeZoneX + safeZoneW * 0.51666667;
+			y = safeZoneY + safeZoneH * 0.33518519;
+			w = safeZoneW * 0.128125;
+			h = safeZoneH * 0.32962963;
 			style = 0;
 			text = "";
 			colorBackground[] = {0.102,0.102,0.102,0.8};
@@ -40,14 +36,14 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuBackground3
+		class ServicesBackground
 		{
 			type = 0;
 			idc = -1;
-			x = 0.15000017;
-			y = 0.46000015;
-			w = 0.38000007;
-			h = 0.34000002;
+			x = safeZoneX + safeZoneW * 0.35572917;
+			y = safeZoneY + safeZoneH * 0.47777778;
+			w = safeZoneW * 0.15677084;
+			h = safeZoneH * 0.18703704;
 			style = 0;
 			text = "";
 			colorBackground[] = {0.102,0.102,0.102,0.8};
@@ -56,14 +52,14 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuTitleBoxShadow
+		class TitleBoxShadow
 		{
 			type = 0;
 			idc = -1;
-			x = 0.15000013;
-			y = 0.17000068;
-			w = 0.70000003;
-			h = 0.02000029;
+			x = safeZoneX + safeZoneW * 0.35572917;
+			y = safeZoneY + safeZoneH * 0.31851852;
+			w = safeZoneW * 0.28854167;
+			h = safeZoneH * 0.01111112;
 			style = 0;
 			text = "";
 			colorBackground[] = {0.5059,0,0,1};
@@ -72,14 +68,14 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuTitleBox
+		class TitleBox
 		{
 			type = 0;
 			idc = -1;
-			x = 0.15000012;
-			y = 0.10000054;
-			w = 0.70000003;
-			h = 0.08000007;
+			x = safeZoneX + safeZoneW * 0.35572917;
+			y = safeZoneY + safeZoneH * 0.27962963;
+			w = safeZoneW * 0.28854167;
+			h = safeZoneH * 0.04444445;
 			style = 0+2;
 			text = "PLAYER MENU";
 			colorBackground[] = {0.702,0.102,0.102,1};
@@ -88,14 +84,14 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
 			
 		};
-		class yMenuInventoryTitleBoxShadow
+		class InventoryTitleShadow
 		{
 			type = 0;
 			idc = -1;
-			x = 0.5500002;
-			y = 0.22000051;
-			w = 0.29000006;
-			h = 0.04000009;
+			x = safeZoneX + safeZoneW * 0.52083334;
+			y = safeZoneY + safeZoneH * 0.3462963;
+			w = safeZoneW * 0.11979167;
+			h = safeZoneH * 0.02222223;
 			style = 0;
 			text = "";
 			colorBackground[] = {0.5059,0,0,1};
@@ -104,14 +100,14 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuInventoryTitleBox
+		class InventoryTitle
 		{
 			type = 0;
 			idc = -1;
-			x = 0.55000037;
-			y = 0.21000049;
-			w = 0.29000003;
-			h = 0.04000009;
+			x = safeZoneX + safeZoneW * 0.52083334;
+			y = safeZoneY + safeZoneH * 0.34074075;
+			w = safeZoneW * 0.11979167;
+			h = safeZoneH * 0.02222223;
 			style = 0+2;
 			text = "Inventory";
 			colorBackground[] = {0.702,0.102,0.102,1};
@@ -121,14 +117,14 @@ class yMenu
 			shadow = 0;
 			
 		};
-		class yMenuFinanceTitleBoxShadow
+		class FinancesTitleShadow
 		{
 			type = 0;
 			idc = -1;
-			x = 0.16000011;
-			y = 0.22000043;
-			w = 0.36000007;
-			h = 0.04000009;
+			x = safeZoneX + safeZoneW * 0.35989584;
+			y = safeZoneY + safeZoneH * 0.3462963;
+			w = safeZoneW * 0.1484375;
+			h = safeZoneH * 0.02222223;
 			style = 0;
 			text = "";
 			colorBackground[] = {0.5059,0,0,1};
@@ -137,14 +133,14 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuFinanceTitleBox
+		class FinancesTitle
 		{
 			type = 0;
 			idc = -1;
-			x = 0.16000011;
-			y = 0.21000049;
-			w = 0.36000006;
-			h = 0.04000009;
+			x = safeZoneX + safeZoneW * 0.35989584;
+			y = safeZoneY + safeZoneH * 0.34074075;
+			w = safeZoneW * 0.1484375;
+			h = safeZoneH * 0.02222223;
 			style = 0+2;
 			text = "Finances";
 			colorBackground[] = {0.702,0.102,0.102,1};
@@ -153,14 +149,63 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuInventoryList
+		class ServicesTitleShadow
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.35989584;
+			y = safeZoneY + safeZoneH * 0.48888889;
+			w = safeZoneW * 0.1484375;
+			h = safeZoneH * 0.02222223;
+			style = 0;
+			text = "";
+			colorBackground[] = {0.5059,0,0,1};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			
+		};
+		class ServicesTitle
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.35989584;
+			y = safeZoneY + safeZoneH * 0.48333334;
+			w = safeZoneW * 0.1484375;
+			h = safeZoneH * 0.02222223;
+			style = 0+2;
+			text = "Services";
+			colorBackground[] = {0.702,0.102,0.102,1};
+			colorText[] = {0.902,0.902,0.902,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			
+		};
+		class InventoryWeight
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.6046875;
+			y = safeZoneY + safeZoneH * 0.34074075;
+			w = safeZoneW * 0.03541667;
+			h = safeZoneH * 0.02222223;
+			style = 1;
+			text = "0/0";
+			colorBackground[] = {0.702,0.102,0.102,0};
+			colorText[] = {0.902,0.902,0.902,1};
+			font = "PuristaLight";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8);
+			shadow = 0;
+			
+		};
+		class InventoryList
 		{
 			type = 5;
 			idc = 1500;
-			x = 0.55000024;
-			y = 0.27000011;
-			w = 0.29000002;
-			h = 0.46000004;
+			x = safeZoneX + safeZoneW * 0.52083334;
+			y = safeZoneY + safeZoneH * 0.37314815;
+			w = safeZoneW * 0.11979167;
+			h = safeZoneH * 0.25277778;
 			style = 16;
 			colorBackground[] = {0.302,0.302,0.302,0.6};
 			colorDisabled[] = {0.2,0.2,0.2,1};
@@ -171,8 +216,8 @@ class yMenu
 			colorPictureDisabled[] = {1,1,1,1};
 			font = "PuristaLight";
 			maxHistoryDelay = 0;
-			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			rowHeight = 0.005;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			class ListScrollBar
 			{
@@ -185,14 +230,14 @@ class yMenu
 			};
 			
 		};
-		class yMenuDiscardShadow
+		class DiscardButtonShadow
 		{
 			type = 0;
 			idc = -1;
-			x = 0.70000021;
-			y = 0.75000055;
-			w = 0.14000007;
-			h = 0.04000009;
+			x = safeZoneX + safeZoneW * 0.58229167;
+			y = safeZoneY + safeZoneH * 0.63796297;
+			w = safeZoneW * 0.0578125;
+			h = safeZoneH * 0.02222223;
 			style = 0;
 			text = "";
 			colorBackground[] = {0.2078,0.2078,0.2078,1};
@@ -201,30 +246,14 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuUseShadow
-		{
-			type = 0;
-			idc = -1;
-			x = 0.55000019;
-			y = 0.75000055;
-			w = 0.14000007;
-			h = 0.04000009;
-			style = 0;
-			text = "";
-			colorBackground[] = {0.2078,0.2078,0.2078,1};
-			colorText[] = {1,1,1,1};
-			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			
-		};
-		class yMenuDiscard
+		class DiscardButton
 		{
 			type = 1;
 			idc = -1;
-			x = 0.7000003;
-			y = 0.74000067;
-			w = 0.14;
-			h = 0.04000003;
+			x = safeZoneX + safeZoneW * 0.58229167;
+			y = safeZoneY + safeZoneH * 0.63240741;
+			w = safeZoneW * 0.0578125;
+			h = safeZoneH * 0.02222223;
 			style = 0+2;
 			text = "Discard";
 			borderSize = 0;
@@ -241,7 +270,7 @@ class yMenu
 			offsetPressedY = 0.00;
 			offsetX = 0.00;
 			offsetY = 0.00;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -249,14 +278,30 @@ class yMenu
 			tooltip = "Discard the selected item.";
 			
 		};
-		class yMenuUse
+		class UseButtonShadow
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.52083334;
+			y = safeZoneY + safeZoneH * 0.63796297;
+			w = safeZoneW * 0.0578125;
+			h = safeZoneH * 0.02222223;
+			style = 0;
+			text = "";
+			colorBackground[] = {0.2078,0.2078,0.2078,1};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			
+		};
+		class UseButton
 		{
 			type = 1;
 			idc = -1;
-			x = 0.55000029;
-			y = 0.74000067;
-			w = 0.14;
-			h = 0.04000003;
+			x = safeZoneX + safeZoneW * 0.52083334;
+			y = safeZoneY + safeZoneH * 0.63240741;
+			w = safeZoneW * 0.0578125;
+			h = safeZoneH * 0.02222223;
 			style = 0+2;
 			text = "Use";
 			borderSize = 0;
@@ -273,7 +318,7 @@ class yMenu
 			offsetPressedY = 0.00;
 			offsetX = 0.00;
 			offsetY = 0.00;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -281,14 +326,14 @@ class yMenu
 			tooltip = "Use the selected item.";
 			
 		};
-		class yMenuCashImage
+		class CashIcon
 		{
 			type = 0;
 			idc = -1;
-			x = 0.17000017;
-			y = 0.27000055;
-			w = 0.06000011;
-			h = 0.08000007;
+			x = safeZoneX + safeZoneW * 0.36822917;
+			y = safeZoneY + safeZoneH * 0.38425926;
+			w = safeZoneW * 0.01666667;
+			h = safeZoneH * 0.02777778;
 			style = 0+2+48;
 			text = "icons\cash.paa";
 			colorBackground[] = {0.702,0.102,0.102,0};
@@ -297,14 +342,14 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
 			
 		};
-		class yMenuBankImage
+		class BankIcon
 		{
 			type = 0;
 			idc = -1;
-			x = 0.17000017;
-			y = 0.36000056;
-			w = 0.06000011;
-			h = 0.08000007;
+			x = safeZoneX + safeZoneW * 0.36822917;
+			y = safeZoneY + safeZoneH * 0.42870371;
+			w = safeZoneW * 0.01666667;
+			h = safeZoneH * 0.02777778;
 			style = 0+2+48;
 			text = "icons\bank.paa";
 			colorBackground[] = {0.702,0.102,0.102,0};
@@ -313,14 +358,14 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
 			
 		};
-		class yMenuLine
+		class FinancesLine
 		{
 			type = 0;
 			idc = -1;
-			x = 0.25000019;
-			y = 0.28000021;
-			w = 0.0000001;
-			h = 0.15000003;
+			x = safeZoneX + safeZoneW * 0.396875;
+			y = safeZoneY + safeZoneH * 0.37870371;
+			w = safeZoneW * 0;
+			h = safeZoneH * 0.08240741;
 			style = 0+176;
 			text = "";
 			colorBackground[] = {0.902,0.902,0.902,1};
@@ -329,78 +374,46 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuBankAmount
+		class BankAmount
 		{
 			type = 0;
 			idc = 1001;
-			x = 0.2700003;
-			y = 0.38000028;
-			w = 0.24000011;
-			h = 0.04000006;
+			x = safeZoneX + safeZoneW * 0.40520834;
+			y = safeZoneY + safeZoneH * 0.42870371;
+			w = safeZoneW * 0.09895834;
+			h = safeZoneH * 0.02777778;
 			style = 0;
 			text = "0000000";
 			colorBackground[] = {0.102,0.102,0.102,0};
 			colorText[] = {0.902,0.902,0.902,1};
 			font = "PuristaLight";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8);
 			
 		};
-		class yMenuCashAmount
+		class CashAmount
 		{
 			type = 0;
 			idc = 1000;
-			x = 0.2700003;
-			y = 0.29000022;
-			w = 0.2400001;
-			h = 0.04000006;
+			x = safeZoneX + safeZoneW * 0.40520834;
+			y = safeZoneY + safeZoneH * 0.38425926;
+			w = safeZoneW * 0.09895834;
+			h = safeZoneH * 0.02777778;
 			style = 0;
 			text = "0000000";
 			colorBackground[] = {0.102,0.102,0.102,0};
 			colorText[] = {0.902,0.902,0.902,1};
 			font = "PuristaLight";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8);
 			
 		};
-		class yMenuServicesTitleBoxShadow
+		class KeychainIcon
 		{
 			type = 0;
 			idc = -1;
-			x = 0.16000011;
-			y = 0.48000049;
-			w = 0.36000007;
-			h = 0.04000009;
-			style = 0;
-			text = "";
-			colorBackground[] = {0.5059,0,0,1};
-			colorText[] = {1,1,1,1};
-			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			
-		};
-		class yMenuServicesTitleBox
-		{
-			type = 0;
-			idc = -1;
-			x = 0.16000011;
-			y = 0.47000049;
-			w = 0.36000004;
-			h = 0.04000009;
-			style = 0+2;
-			text = "Services";
-			colorBackground[] = {0.702,0.102,0.102,1};
-			colorText[] = {0.902,0.902,0.902,1};
-			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			
-		};
-		class yMenuKeysImage
-		{
-			type = 0;
-			idc = -1;
-			x = 0.19000019;
-			y = 0.61000063;
-			w = 0.06000011;
-			h = 0.08000007;
+			x = safeZoneX + safeZoneW * 0.371875;
+			y = safeZoneY + safeZoneH * 0.56018519;
+			w = safeZoneW * 0.025;
+			h = safeZoneH * 0.04444445;
 			style = 0+2+48;
 			text = "icons\keys.paa";
 			colorBackground[] = {0.702,0.102,0.102,0};
@@ -410,31 +423,14 @@ class yMenu
 			tooltip = "View your keychain.";
 			
 		};
-		class yMenuInboxImage
+		class GangIcon
 		{
 			type = 0;
 			idc = -1;
-			x = 0.43000026;
-			y = 0.6100006;
-			w = 0.06000011;
-			h = 0.08000007;
-			style = 0+2+48;
-			text = "icons\messages.paa";
-			colorBackground[] = {0.702,0.102,0.102,0};
-			colorText[] = {0.902,0.902,0.902,1};
-			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
-			tooltip = "View your inbox.";
-			
-		};
-		class yMenuGangImage
-		{
-			type = 0;
-			idc = -1;
-			x = 0.31000024;
-			y = 0.6100006;
-			w = 0.06000011;
-			h = 0.08000007;
+			x = safeZoneX + safeZoneW * 0.421875;
+			y = safeZoneY + safeZoneH * 0.56018519;
+			w = safeZoneW * 0.025;
+			h = safeZoneH * 0.04444445;
 			style = 0+2+48;
 			text = "icons\gang.paa";
 			colorBackground[] = {0.702,0.102,0.102,0};
@@ -444,14 +440,31 @@ class yMenu
 			tooltip = "View the gang menu.";
 			
 		};
-		class yMenuLine1
+		class InboxIcon
 		{
 			type = 0;
 			idc = -1;
-			x = 0.28000021;
-			y = 0.57000027;
-			w = 0.0000001;
-			h = 0.16000004;
+			x = safeZoneX + safeZoneW * 0.47135417;
+			y = safeZoneY + safeZoneH * 0.56018519;
+			w = safeZoneW * 0.025;
+			h = safeZoneH * 0.04444445;
+			style = 0+2+48;
+			text = "icons\messages.paa";
+			colorBackground[] = {0.702,0.102,0.102,0};
+			colorText[] = {0.902,0.902,0.902,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
+			tooltip = "View your inbox.";
+			
+		};
+		class ServicesLine1
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.409375;
+			y = safeZoneY + safeZoneH * 0.53888889;
+			w = safeZoneW * 0;
+			h = safeZoneH * 0.08796297;
 			style = 0+176;
 			text = "";
 			colorBackground[] = {0.902,0.902,0.902,1};
@@ -460,14 +473,14 @@ class yMenu
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class yMenuLine2
+		class ServicesLine2
 		{
 			type = 0;
 			idc = -1;
-			x = 0.40000025;
-			y = 0.57000027;
-			w = 0.0000001;
-			h = 0.16000004;
+			x = safeZoneX + safeZoneW * 0.45885417;
+			y = safeZoneY + safeZoneH * 0.53888889;
+			w = safeZoneW * 0;
+			h = safeZoneH * 0.08796297;
 			style = 0+176;
 			text = "";
 			colorBackground[] = {0.902,0.902,0.902,1};

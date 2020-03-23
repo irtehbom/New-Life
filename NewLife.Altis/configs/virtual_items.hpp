@@ -17,7 +17,7 @@ class VirtualItemConfig {
         sellPrice = -1;
         illegal = false;
         edible = false;
-        icon = "icons\ico_goldBar.paa";
+        icon = "icons\gold_ore.paa";
     };
 
     class vitem_gold {
@@ -28,7 +28,7 @@ class VirtualItemConfig {
         sellPrice = -1;
         illegal = false;
         edible = false;
-        icon = "icons\ico_goldBar.paa";
+        icon = "icons\gold_bar.paa";
     };
 
     class vitem_silver_unprocessed {
@@ -40,7 +40,7 @@ class VirtualItemConfig {
         sellPrice = -1;
         illegal = false;
         edible = false;
-        icon = "icons\ico_goldBar.paa";
+        icon = "icons\silver_ore.paa";
     };
 
     class vitem_silver {
@@ -51,7 +51,7 @@ class VirtualItemConfig {
         sellPrice = -1;
         illegal = false;
         edible = false;
-        icon = "icons\ico_goldBar.paa";
+        icon = "icons\silver_bar.paa";
     };
 
 };
