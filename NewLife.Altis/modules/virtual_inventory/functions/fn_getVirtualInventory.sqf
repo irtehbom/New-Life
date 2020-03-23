@@ -18,3 +18,6 @@ lbClear _listBoxControl;
     _listBoxControl lbSetPicture [_foreachindex, _currentItemIcon];
 
 } forEach _virtual_inventory;
+
+//VIRTUAL_INVENTORY = [["vitem_gold_unprocessed",["Gold Ore",10,2,"icons\ico_goldBar.paa"]], ["vitem_silver_unprocessed",["Silver Ore",10,2,"icons\ico_goldBar.paa"]]];
+//cursorObject setVariable["virtual_inventory", [ ["vitem_gold_unprocessed",["Gold Ore",1,2,"icons\ico_goldBar.paa"]] , ["vitem_silver_unprocessed",["Silver Ore",10,2,"icons\ico_goldBar.paa"]] ] ];

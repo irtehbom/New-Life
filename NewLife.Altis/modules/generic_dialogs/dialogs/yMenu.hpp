@@ -1,4 +1,3 @@
-#include "CustomControlClasses.hpp"
 class yMenu
 {
 	idd = 9903;
