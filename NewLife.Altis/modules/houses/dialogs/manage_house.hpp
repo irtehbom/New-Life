@@ -86,6 +86,7 @@ class manageHouse
      	y = 0.61 * safezoneH + safezoneY;
      	w = 0.061875 * safezoneW;
      	h = 0.033 * safezoneH;
+     	action = "";
      };
      class managePermissionsListBox: RscListBox
      {
