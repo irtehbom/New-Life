@@ -185,9 +185,9 @@ class yMenu
 		{
 			type = 0;
 			idc = -1;
-			x = safeZoneX + safeZoneW * 0.590625;
+			x = safeZoneX + safeZoneW * 0.6046875;
 			y = safeZoneY + safeZoneH * 0.34074075;
-			w = safeZoneW * 0.0453125;
+			w = safeZoneW * 0.03541667;
 			h = safeZoneH * 0.02222223;
 			style = 1;
 			text = "0/0";
