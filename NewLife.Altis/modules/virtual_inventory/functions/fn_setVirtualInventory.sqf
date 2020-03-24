@@ -16,12 +16,14 @@ _playerInventroy = VIRTUAL_INVENTORY;
 _objectListBoxControl = _display displayCtrl 1501;
 _objectInputBoxControl = _display displayCtrl 1401;
 
+_inputAmount = _display displayCtrl 1400;
+
 _objectInventory = currentTarget getVariable["virtual_inventory",[]];
 
 if(_mode == 1) then {
-    [_playerListBoxControl, _objectListBoxControl, _playerInventroy, _objectInventory] call newLife_fnc_transferVirtualInventory;
+    [_playerListBoxControl, _objectListBoxControl, _playerInventroy, _objectInventory, _inputAmount] call newLife_fnc_transferVirtualInventory;
 };
 
 if(_mode == 2) then {
-    [_objectListBoxControl, _playerListBoxControl, _objectInventory, _playerInventroy] call newLife_fnc_transferVirtualInventory;
+    [_objectListBoxControl, _playerListBoxControl, _objectInventory, _playerInventroy , _inputAmount] call newLife_fnc_transferVirtualInventory;
 };
