@@ -1,129 +1,299 @@
-/*
-*    Author: Robert Jones
-*/
 class spawnMenu
+{
+	idd = 9904;
+	
+	class ControlsBackground
 	{
-	idd=9904;
-	class controls
-	    {
-    ////////////////////////////////////////////////////////
-    // GUI EDITOR OUTPUT START (by Rob, v1.063, #Zywoku)
-    ////////////////////////////////////////////////////////
-
-    class welcomeFrame: RscFrame
-    {
-    	idc = 1800;
-
-    	x = 0.298906 * safezoneW + safezoneX;
-    	y = 0.247 * safezoneH + safezoneY;
-    	w = 0.402187 * safezoneW;
-    	h = 0.517 * safezoneH;
-    	colorBackground[] ={255,0,0,0.2};
-    };
-    class innerFrameLeft: RscFrame
-    {
-    	idc = 1801;
-    	x = 0.304062 * safezoneW + safezoneX;
-    	y = 0.258 * safezoneH + safezoneY;
-    	w = 0.195937 * safezoneW;
-    	h = 0.451 * safezoneH;
-    	colorBackground[] = {0,0,0,0.9};
-    };
-    class welcomeText: RscText
-    {
-    	idc = 1000;
-    	text = "Welcome to New Life"; //--- ToDo: Localize;
-    	x = 0.309219 * safezoneW + safezoneX;
-    	y = 0.269 * safezoneH + safezoneY;
-    	w = 0.170156 * safezoneW;
-    	h = 0.022 * safezoneH;
-    };
-    class newsLabel: RscText
-    {
-    	idc = 1001;
-
-    	text = "Latest News"; //--- ToDo: Localize;
-    	x = 0.309219 * safezoneW + safezoneX;
-    	y = 0.467 * safezoneH + safezoneY;
-    	w = 0.165 * safezoneW;
-    	h = 0.022 * safezoneH;
-    	colorText[] = {255,255,255,1};
-    };
- class map: CT_MAP
-    {
-    	idc = 1802;
-    	maxSatelliteAlpha = 0.75;
-    	alphaFadeStartScale = 1.15;
-    	alphaFadeEndScale = 1.29;
-
-    	x = 0.505156 * safezoneW + safezoneX;
-    	y = 0.258 * safezoneH + safezoneY;
-    	w = 0.185625 * safezoneW;
-    	h = 0.264 * safezoneH;
-    };
-    class spawnInfo: RscListBox
-    {
-    	idc = 255555;
-    	x = 0.505156 * safezoneW + safezoneX;
-    	y = 0.566 * safezoneH + safezoneY;
-    	w = 0.185625 * safezoneW;
-    	h = 0.121 * safezoneH;
-    	onLBSelChanged = "[_this] remoteExec call newLife_fnc_spawnMapMarkerPosition";
-    };
-    class spawnAtHouse: RscButton
-    {
-    	idc = 1600;
-      	colorBackground[] ={255,0,0,0.7};
-    	text = "Spawn at House"; //--- ToDo: Localize;
-    	x = 0.618594 * safezoneW + safezoneX;
-    	y = 0.709 * safezoneH + safezoneY;
-    	w = 0.0721875 * safezoneW;
-    	h = 0.033 * safezoneH;
-
-    };
-    class spawnAtTown: RscButton
-    {
-    	idc = 1601;
-      	colorBackground[] ={255,0,0,0.7};
-    	text = "Spawn at Town"; //--- ToDo: Localize;
-    	x = 0.546406 * safezoneW + safezoneX;
-    	y = 0.709 * safezoneH + safezoneY;
-    	w = 0.061875 * safezoneW;
-    	h = 0.033 * safezoneH;
-    };
-    class spacerOne: RscFrame
-    {
-    	idc = 1801;
-    	x = 0.309219 * safezoneW + safezoneX;
-    	y = 0.302 * safezoneH + safezoneY;
-    	w = 0.185625 * safezoneW;
-    	h = 0.000999999 * safezoneH;
-    	colorBackground[] = {255,255,255,1};
-    };
-    class spacerTwo: RscFrame
-    {
-    	idc = 1801;
-
-    	x = 0.309219 * safezoneW + safezoneX;
-    	y = 0.5 * safezoneH + safezoneY;
-    	w = 0.185625 * safezoneW;
-    	h = 0.000999999 * safezoneH;
-    	colorBackground[] = {255,255,255,1};
-    };
-    class spawnDesc: RscText
-    {
-    	idc = 1000;
-        sizeEx = 0.03;
-    	text = "If you have a house select it below, otherwise click Spawn at Town"; //--- ToDo: Localize;
-    	x = 0.5 * safezoneW + safezoneX;
-    	y = 0.533 * safezoneH + safezoneY;
-    	w = 0.190781 * safezoneW;
-    	h = 0.022 * safezoneH;
-    };
-    ////////////////////////////////////////////////////////
-    // GUI EDITOR OUTPUT END
-    ////////////////////////////////////////////////////////
-
-
-    };
-}
+		
+	};
+	class Controls
+	{
+		class Background
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.35572917;
+			y = safeZoneY + safeZoneH * 0.33518519;
+			w = safeZoneW * 0.28854167;
+			h = safeZoneH * 0.33148149;
+			style = 0;
+			text = "";
+			colorBackground[] = {0.102,0.102,0.102,0.8};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			
+		};
+		class TitleBoxShadow
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.35572917;
+			y = safeZoneY + safeZoneH * 0.31851852;
+			w = safeZoneW * 0.2890625;
+			h = safeZoneH * 0.01111112;
+			style = 0;
+			text = "";
+			colorBackground[] = {0.5059,0,0,1};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			
+		};
+		class TitleBox
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.35572917;
+			y = safeZoneY + safeZoneH * 0.28055556;
+			w = safeZoneW * 0.2890625;
+			h = safeZoneH * 0.04351852;
+			style = 2;
+			text = "SPAWN MENU";
+			colorBackground[] = {0.702,0.102,0.102,1};
+			colorText[] = {0.902,0.902,0.902,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.4);
+			
+		};
+		class PlayerTitleShadow
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.35989584;
+			y = safeZoneY + safeZoneH * 0.3462963;
+			w = safeZoneW * 0.11979167;
+			h = safeZoneH * 0.02222223;
+			style = 0;
+			text = "";
+			colorBackground[] = {0.5059,0,0,1};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			
+		};
+		class PlayerTitle
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.35989584;
+			y = safeZoneY + safeZoneH * 0.34074075;
+			w = safeZoneW * 0.11979167;
+			h = safeZoneH * 0.02222223;
+			style = 2;
+			text = "Welcome!";
+			colorBackground[] = {0.702,0.102,0.102,1};
+			colorText[] = {0.902,0.902,0.902,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			
+		};
+		class StoreButtonShadow
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.578125;
+			y = safeZoneY + safeZoneH * 0.5712963;
+			w = safeZoneW * 0.0578125;
+			h = safeZoneH * 0.01666667;
+			style = 0;
+			text = "";
+			colorBackground[] = {0.502,0.0729,0.0729,1};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			
+		};
+		class StoreButton
+		{
+			type = 1;
+			idc = 1601;
+			x = safeZoneX + safeZoneW * 0.578125;
+			y = safeZoneY + safeZoneH * 0.54444445;
+			w = safeZoneW * 0.0578125;
+			h = safeZoneH * 0.03888889;
+			style = 2;
+			text = "Town";
+			borderSize = 0;
+			colorBackground[] = {0.702,0.102,0.102,1};
+			colorBackgroundActive[] = {0.8,0.2,0.2,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0,0,0,0};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.502,0.0729,0.0729,1};
+			colorShadow[] = {0,0,0,0};
+			colorText[] = {0.902,0.902,0.902,1};
+			font = "PuristaLight";
+			offsetPressedX = 0.00;
+			offsetPressedY = 0.00;
+			offsetX = 0.00;
+			offsetY = 0.00;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			action = "[1] spawn newLife_fnc_setVirtualInventory";
+			tooltip = "Spawn at a random town.";
+			
+		};
+		class TakeButtonShadow
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.578125;
+			y = safeZoneY + safeZoneH * 0.62685186;
+			w = safeZoneW * 0.0578125;
+			h = safeZoneH * 0.02222223;
+			style = 0;
+			text = "";
+			colorBackground[] = {0.502,0.0729,0.0729,1};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			
+		};
+		class TakeButton
+		{
+			type = 1;
+			idc = 1600;
+			x = safeZoneX + safeZoneW * 0.578125;
+			y = safeZoneY + safeZoneH * 0.60462963;
+			w = safeZoneW * 0.0578125;
+			h = safeZoneH * 0.03888889;
+			style = 2;
+			text = "House";
+			borderSize = 0;
+			colorBackground[] = {0.702,0.102,0.102,1};
+			colorBackgroundActive[] = {0.8,0.2,0.2,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0,0,0,0};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.502,0.0729,0.0729,1};
+			colorShadow[] = {0,0,0,0};
+			colorText[] = {0.902,0.902,0.902,1};
+			font = "PuristaLight";
+			offsetPressedX = 0.00;
+			offsetPressedY = 0.00;
+			offsetX = 0.00;
+			offsetY = 0.00;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			action = "[2] spawn newLife_fnc_setVirtualInventory";
+			tooltip = "Spawn at the selected house.";
+			
+		};
+		class Map: CT_MAP
+		{
+			scaleDefault = 1.00;
+			alphaFadeEndScale = 10.00;
+			idc = 1802;
+			x = safeZoneX + safeZoneW * 0.48333334;
+			y = safeZoneY + safeZoneH * 0.34074075;
+			w = safeZoneW * 0.15677084;
+			h = safeZoneH * 0.18703704;
+			
+		};
+		class HouseList
+		{
+			type = 5;
+			idc = 255555;
+			x = safeZoneX + safeZoneW * 0.48333334;
+			y = safeZoneY + safeZoneH * 0.53333334;
+			w = safeZoneW * 0.08697917;
+			h = safeZoneH * 0.12685186;
+			style = 16;
+			colorBackground[] = {0,0,0,0.6};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorSelect[] = {0.2,0.2,0.2,1};
+			colorText[] = {0.902,0.902,0.902,1};
+			font = "PuristaLight";
+			maxHistoryDelay = 0;
+			rowHeight = 0.005;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8);
+			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
+			onLBSelChanged = "[_this] remoteExec call newLife_fnc_spawnMapMarkerPosition";
+			class ListScrollBar
+			{
+				color[] = {1,1,1,1};
+				thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
+				arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
+				arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
+				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
+				
+			};
+			
+		};
+		class NewsTitleShadow
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.35989584;
+			y = safeZoneY + safeZoneH * 0.50555556;
+			w = safeZoneW * 0.11979167;
+			h = safeZoneH * 0.02222223;
+			style = 0;
+			text = "";
+			colorBackground[] = {0.5059,0,0,1};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			
+		};
+		class NewsTitle
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.35989584;
+			y = safeZoneY + safeZoneH * 0.5;
+			w = safeZoneW * 0.11979167;
+			h = safeZoneH * 0.02222223;
+			style = 2;
+			text = "Latest News";
+			colorBackground[] = {0.702,0.102,0.102,1};
+			colorText[] = {0.902,0.902,0.902,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			
+		};
+		class NewsText
+		{
+			type = 0;
+			idc = 1802;
+			x = safeZoneX + safeZoneW * 0.35989584;
+			y = safeZoneY + safeZoneH * 0.53333334;
+			w = safeZoneW * 0.11979167;
+			h = safeZoneH * 0.12685186;
+			style = 16;
+			text = "Coronavirus has spread throughout Altis, we are all gonna die.";
+			colorBackground[] = {0,0,0,0.6};
+			colorText[] = {0.902,0.902,0.902,1};
+			font = "PuristaLight";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.6);
+			lineSpacing = 1;
+			
+		};
+		class WelcomeText
+		{
+			type = 0;
+			idc = 1802;
+			x = safeZoneX + safeZoneW * 0.35989584;
+			y = safeZoneY + safeZoneH * 0.37314815;
+			w = safeZoneW * 0.11979167;
+			h = safeZoneH * 0.1212963;
+			style = 16;
+			text = "Welcome to New Life! Please select a house to spawn at, or spawn in a town.";
+			colorBackground[] = {0,0,0,0.6};
+			colorText[] = {0.902,0.902,0.902,1};
+			font = "PuristaLight";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.6);
+			lineSpacing = 1;
+			
+		};
+		
+	};
+	
+};

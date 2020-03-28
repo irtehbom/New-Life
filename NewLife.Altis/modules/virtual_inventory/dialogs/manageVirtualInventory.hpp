@@ -2,6 +2,10 @@ class manageVirtualInventory
 {
 	idd = 9905;
 	
+	class ControlsBackground
+	{
+		
+	};
 	class Controls
 	{
 		class Background
@@ -44,12 +48,12 @@ class manageVirtualInventory
 			y = safeZoneY + safeZoneH * 0.27962963;
 			w = safeZoneW * 0.28854167;
 			h = safeZoneH * 0.04444445;
-			style = 0+2;
-			text = "VIRTUAL INVENTORY";
+			style = 2;
+			text = "MANAGE INVENTORY";
 			colorBackground[] = {0.702,0.102,0.102,1};
 			colorText[] = {0.902,0.902,0.902,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.4);
 			
 		};
 		class StorageTitleShadow
@@ -121,15 +125,18 @@ class manageVirtualInventory
 		{
 			type = 5;
 			idc = 1501;
-			x = safeZoneX + safeZoneW * 0.52083334;
+			x = safeZoneX + safeZoneW * 0.5203125;
 			y = safeZoneY + safeZoneH * 0.37314815;
-			w = safeZoneW * 0.11979167;
+			w = safeZoneW * 0.1203125;
 			h = safeZoneH * 0.28611112;
 			style = 16;
-			colorBackground[] = {0.302,0.302,0.302,0.6};
+			colorBackground[] = {0,0,0,0.6};
 			colorDisabled[] = {0.2,0.2,0.2,1};
 			colorSelect[] = {0.2,0.2,0.2,1};
 			colorText[] = {0.902,0.902,0.902,1};
+			colorPicture[] = {1,1,1,1};
+			colorPictureSelected[] = {1,1,1,1};
+			colorPictureDisabled[] = {1,1,1,1};
 			font = "PuristaLight";
 			maxHistoryDelay = 0;
 			rowHeight = 0.005;
@@ -170,7 +177,7 @@ class manageVirtualInventory
 			y = safeZoneY + safeZoneH * 0.48333334;
 			w = safeZoneW * 0.01666667;
 			h = safeZoneH * 0.02222223;
-			style = 0+2;
+			style = 2;
 			text = ">";
 			borderSize = 0;
 			colorBackground[] = {0.702,0.102,0.102,1};
@@ -192,7 +199,7 @@ class manageVirtualInventory
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
 			action = "[1] spawn newLife_fnc_setVirtualInventory";
-			tooltip = "Discard the selected item.";
+			tooltip = "Store the selected item.";
 			
 		};
 		class PlayerInventoryList
@@ -204,10 +211,13 @@ class manageVirtualInventory
 			w = safeZoneW * 0.11979167;
 			h = safeZoneH * 0.28611112;
 			style = 16;
-			colorBackground[] = {0.302,0.302,0.302,0.6};
+			colorBackground[] = {0,0,0,0.6};
 			colorDisabled[] = {0.2,0.2,0.2,1};
 			colorSelect[] = {0.2,0.2,0.2,1};
 			colorText[] = {0.902,0.902,0.902,1};
+			colorPicture[] = {1,1,1,1};
+			colorPictureSelected[] = {1,1,1,1};
+			colorPictureDisabled[] = {1,1,1,1};
 			font = "PuristaLight";
 			maxHistoryDelay = 0;
 			rowHeight = 0.005;
@@ -248,7 +258,7 @@ class manageVirtualInventory
 			y = safeZoneY + safeZoneH * 0.51666667;
 			w = safeZoneW * 0.01666667;
 			h = safeZoneH * 0.02222223;
-			style = 0+2;
+			style = 2;
 			text = "<";
 			borderSize = 0;
 			colorBackground[] = {0.702,0.102,0.102,1};
@@ -270,7 +280,7 @@ class manageVirtualInventory
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
 			action = "[2] spawn newLife_fnc_setVirtualInventory";
-			tooltip = "Discard the selected item.";
+			tooltip = "Take the selected item.";
 			
 		};
 		class InputAmount
@@ -284,12 +294,12 @@ class manageVirtualInventory
 			style = 0;
 			text = "";
 			autocomplete = "";
-			colorBackground[] = {0.102,0.102,0.102,1};
+			colorBackground[] = {0,0,0,0.6};
 			colorDisabled[] = {0.2,0.2,0.2,1};
 			colorSelection[] = {1,0,0,1};
 			colorText[] = {0.902,0.902,0.902,1};
-			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			font = "PuristaLight";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8);
 			
 		};
 		class PlayerWeight
